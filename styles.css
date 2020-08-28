@@ -15,7 +15,7 @@ h1{
     background: #fff;
     max-width: 960px;
     margin: 30px auto;
-    padding:  20px 30px;
+    padding:  20px 40px;
     border-radius: 10px 120px 10px 10px;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
@@ -24,7 +24,9 @@ ul{
     list-style-type: none;
     padding: 0;
 }
-
+li:first-child {
+    border-radius: 10px 120px 10px 10px;
+}
 li{
     padding: 20px;
     background: #f6f6f6;
@@ -35,7 +37,7 @@ li{
     height: 46px;
 }
 
-li:nth-child(even){
+li:nth-child(2){
     padding: 20px;
     background: #f2f2f2;
 }

@@ -1,19 +1,46 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
 
-        <h1>Cloud Cafe</h1>
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <div class="content">
+<body>
 
-            <form id="add-cafe-form"></form>
+    <h1>Cloud Cafe</h1>
 
-            <ul id="cafe-list"></ul>
+    <div class="content">
 
-        </div>
+        <form id="add-cafe-form"></form>
 
-        <script src="app.js"></script>
-    </body>
+        <ul id="cafe-list"></ul>
+
+    </div>
+
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCdbF4etiBZUrYii8yLkVQG8GO2dyXC-20",
+            authDomain: "fir-tutorial-ruoqi.firebaseapp.com",
+            databaseURL: "https://fir-tutorial-ruoqi.firebaseio.com",
+            projectId: "fir-tutorial-ruoqi",
+            storageBucket: "fir-tutorial-ruoqi.appspot.com",
+            messagingSenderId: "747755847299",
+            appId: "1:747755847299:web:005d089eb512b8aefae5b6",
+            measurementId: "G-XMN2BYZG53"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        firebase.analytics();
+    </script>
+    <script src="app.js"></script>
+</body>
+
 </html>
